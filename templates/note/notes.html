@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страничка<</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="note" class="d-flex align-items-center text-dark text-decoration-none">
+
+            <span class="fs-4"><u><b>Note</b></u></span>
+        </a>
+    </header>
+</head>
+<body>
+    <h1>Одноразовые заметки</h1>
+
+    {% for el in title %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{  el.title }}</h3>
+        </div>
+    {% endfor %}
+</body>
+</html>

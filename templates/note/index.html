@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+        <span class="fs-4"><u><b>Notes</b></u></span>
+    </a>
+
+</header>
+</head>
+<body>
+
+
+    <h2>Одноразовые заметки</h2>
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.title }}
+
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    </nav>
+
+
+
+
+        <button type="submit" class="button">Добавить</button>
+    </form>
+
+</body>
+</html>
